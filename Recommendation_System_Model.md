@@ -922,7 +922,7 @@ ax.set_title('Distribution(count) of different Reviews rating',size=20)
 
 
 
-    <matplotlib.text.Text at 0x117c2cc88>
+    <matplotlib.text.Text at 0x10e1c24a8>
 
 
 
@@ -955,7 +955,7 @@ ax.set_title('Distribution(count) of User given rating',size=20)
 
 
 
-    <matplotlib.text.Text at 0x117a86128>
+    <matplotlib.text.Text at 0x10e0fa438>
 
 
 
@@ -1086,7 +1086,7 @@ plt.ylabel('Count',fontsize=18)
 
 
 
-    <matplotlib.text.Text at 0x1164476d8>
+    <matplotlib.text.Text at 0x1110c9be0>
 
 
 
@@ -1139,15 +1139,54 @@ American_restaurant_rating_df.head(2)
 
 
 
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-2-063b38b70f8b> in <module>()
-    ----> 1 American_restaurant_rating_df.head(2)
 
 
-    NameError: name 'American_restaurant_rating_df' is not defined
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+    
+    .dataframe thead th {
+        text-align: left;
+    }
+    
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>business_id</th>
+      <th>stars</th>
+      <th>categories</th>
+      <th>name</th>
+      <th>review_count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>34</th>
+      <td>reWc1g65PNZnKz_Ub9QKOQ</td>
+      <td>2.5</td>
+      <td>['Comfort Food', 'Canadian (New)', 'Restaurant...</td>
+      <td>Milestones Restaurants</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Z1r6b30Tg0n0ME4-Zj2wQQ</td>
+      <td>3.0</td>
+      <td>['American (Traditional)', 'Restaurants', 'Bar...</td>
+      <td>Boardwalk Place</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 
 ## Top 20 American 5 star rated Restaurant
@@ -1459,27 +1498,27 @@ print_perf(perf)
     ------------
     Fold 1
     Estimating biases using als...
-    RMSE: 1.2502
-    MAE:  1.0162
+    RMSE: 1.2529
+    MAE:  1.0208
     ------------
     Fold 2
     Estimating biases using als...
-    RMSE: 1.2405
-    MAE:  1.0106
+    RMSE: 1.2463
+    MAE:  1.0155
     ------------
     Fold 3
     Estimating biases using als...
-    RMSE: 1.2543
-    MAE:  1.0210
+    RMSE: 1.2420
+    MAE:  1.0058
     ------------
     ------------
-    Mean RMSE: 1.2483
-    Mean MAE : 1.0159
+    Mean RMSE: 1.2471
+    Mean MAE : 1.0140
     ------------
     ------------
             Fold 1  Fold 2  Fold 3  Mean    
-    RMSE    1.2502  1.2405  1.2543  1.2483  
-    MAE     1.0162  1.0106  1.0210  1.0159  
+    RMSE    1.2529  1.2463  1.2420  1.2471  
+    MAE     1.0208  1.0155  1.0058  1.0140  
 
 
 ### KNNBaseline Model
@@ -1516,31 +1555,31 @@ print_perf(perf)
     Estimating biases using als...
     Computing the msd similarity matrix...
     Done computing similarity matrix.
-    RMSE: 1.2662
-    MAE:  1.0325
+    RMSE: 1.2573
+    MAE:  1.0241
     ------------
     Fold 2
     Estimating biases using als...
     Computing the msd similarity matrix...
     Done computing similarity matrix.
-    RMSE: 1.2587
-    MAE:  1.0229
+    RMSE: 1.2523
+    MAE:  1.0202
     ------------
     Fold 3
     Estimating biases using als...
     Computing the msd similarity matrix...
     Done computing similarity matrix.
-    RMSE: 1.2439
-    MAE:  1.0084
+    RMSE: 1.2479
+    MAE:  1.0108
     ------------
     ------------
-    Mean RMSE: 1.2563
-    Mean MAE : 1.0213
+    Mean RMSE: 1.2525
+    Mean MAE : 1.0184
     ------------
     ------------
             Fold 1  Fold 2  Fold 3  Mean    
-    RMSE    1.2662  1.2587  1.2439  1.2563  
-    MAE     1.0325  1.0229  1.0084  1.0213  
+    RMSE    1.2573  1.2523  1.2479  1.2525  
+    MAE     1.0241  1.0202  1.0108  1.0184  
 
 
 ## Memory Based Collaborative filtering
@@ -1926,7 +1965,7 @@ print('Item-based CF RMSE: ' + str(rmse(restaurant_prediction, test_data_matrix)
 ```
 
 
-    User-based CF RMSE: 1.7855838795222876
+    User-based CF RMSE: 1.786926798491104
     Item-based CF RMSE: 1.791759469228055
 
 
@@ -1967,35 +2006,35 @@ u,s,vt
 
 
 
-    (array([[  3.34049657e-17,   1.24991845e-06,  -5.62863149e-06, ...,
-              -2.40778734e-04,   1.66342739e-03,   5.35846521e-02],
-            [  0.00000000e+00,   0.00000000e+00,   0.00000000e+00, ...,
-               0.00000000e+00,   0.00000000e+00,   0.00000000e+00],
-            [  4.17562072e-17,   1.56239806e-06,  -7.03578937e-06, ...,
-              -3.00973418e-04,   2.07928424e-03,   6.69808152e-02],
+    (array([[ -3.95229988e-17,   1.64641342e-06,  -6.92740407e-09, ...,
+               4.82067737e-02,   2.90212001e-03,   2.29274992e-02],
+            [ -4.94037485e-17,   2.05801677e-06,  -8.65925509e-09, ...,
+               6.02584671e-02,   3.62765002e-03,   2.86593740e-02],
+            [ -4.94037485e-17,   2.05801677e-06,  -8.65925509e-09, ...,
+               6.02584671e-02,   3.62765002e-03,   2.86593740e-02],
             ..., 
-            [ -2.52694152e-17,   9.27804311e-08,  -2.07726738e-03, ...,
-               5.99920397e-07,  -2.71221463e-09,   3.24121438e-09],
-            [ -2.52694152e-17,   9.27804311e-08,  -2.07726738e-03, ...,
-               5.99920397e-07,  -2.71221463e-09,   3.24121438e-09],
+            [  1.74011982e-17,  -1.02397546e-05,   1.44585715e-03, ...,
+              -3.07906976e-07,  -1.21289168e-08,   6.33194767e-07],
+            [  1.74011982e-17,  -1.02397546e-05,   1.44585715e-03, ...,
+              -3.07906976e-07,  -1.21289168e-08,   6.33194767e-07],
             [  0.00000000e+00,   0.00000000e+00,   0.00000000e+00, ...,
                0.00000000e+00,   0.00000000e+00,   0.00000000e+00]]),
-     array([ 53.17643053,  53.67574176,  54.45775196,  55.39408552,
-             55.44130123,  56.40848564,  69.47353176,  74.29736843,
-             74.53257863,  74.57839766]),
-     array([[  2.78084305e-16,   5.20417043e-17,   8.63892291e-16, ...,
-               5.23967728e-17,  -2.45919167e-18,   4.44089210e-16],
-            [ -6.51182607e-03,  -2.22125771e-04,   6.67698688e-05, ...,
-               1.83575939e-17,   8.76235443e-18,   1.67725749e-05],
-            [ -9.96913395e-07,  -4.06463072e-06,  -9.38434558e-05, ...,
-              -1.84763414e-17,   7.98872131e-18,  -7.66306544e-05],
+     array([ 53.37205706,  53.48403922,  54.49528743,  55.62418564,
+             57.09813687,  58.06523648,  69.31721114,  74.7306516 ,
+             74.88853546,  74.93436834]),
+     array([[ -5.40583203e-16,  -7.54604712e-17,  -2.08166817e-16, ...,
+              -6.75052531e-18,  -9.77157184e-18,  -5.27355937e-16],
+            [ -6.79740918e-03,   2.08110178e-04,   2.09076469e-05, ...,
+               7.16620018e-18,   2.79875630e-18,   2.20142100e-05],
+            [ -8.55691578e-05,   9.03121193e-06,  -3.12325665e-06, ...,
+              -1.97986675e-17,   3.85038888e-17,  -9.43777190e-08],
             ..., 
-            [  4.02264688e-05,   1.30972069e-02,   9.97892298e-04, ...,
-              -1.89867683e-17,  -5.98092194e-18,  -4.47230658e-03],
-            [ -5.76288178e-05,  -5.07967905e-05,   4.83647324e-04, ...,
-              -5.78431017e-17,   2.17080572e-18,   3.09948833e-02],
-            [  6.65940501e-05,   4.59236238e-04,   2.75722771e-02, ...,
-              -6.54104231e-17,   1.32723866e-17,   9.99064374e-01]]))
+            [  8.99662691e-04,  -2.79249738e-03,   1.02189312e-02, ...,
+              -1.62715814e-17,   3.42850244e-17,   9.00630902e-01],
+            [  1.75116057e-04,   7.16776781e-04,   6.63273313e-03, ...,
+               4.85263214e-18,  -4.53443824e-18,   5.43338794e-02],
+            [  2.27320578e-03,   6.35674007e-03,   6.08008752e-02, ...,
+               5.29063540e-18,  -5.41239647e-18,   4.29514418e-01]]))
 
 
 
@@ -2006,6 +2045,9 @@ print('User-based CF MSE: ' + str(rmse(X_pred, test_data_matrix)))
 ```
 
 
+    User-based CF MSE: 1.791330436226992
+
+
 
 
 ```python
@@ -2013,7 +2055,7 @@ print('User-based CF MSE: ' + str(rmse(X_pred, train_data_matrix)))
 ```
 
 
-    User-based CF MSE: 1.3158295177785562
+    User-based CF MSE: 1.3123341994140327
 
 
 
@@ -2039,7 +2081,7 @@ print('User-based CF MSE: ' + str(rmse(X_pred_test, test_data_matrix)))
 ```
 
 
-    User-based CF MSE: 1.7917594692280685
+    User-based CF MSE: 1.791759469228061
 
 
 
@@ -2109,20 +2151,6 @@ model_memory_based_pred_res_flat.size
 
 
 ```python
-pred_model_array.shape
-```
-
-
-
-
-
-    (5663018, 3)
-
-
-
-
-
-```python
 pred_model_array_train[:,0] = model_memory_based_pred_res_flat
 pred_model_array_train[:,1] = model_memory_based_pred_user_flat 
 pred_model_array_train[:,2] = model_svd_based_pred_flat
@@ -2178,22 +2206,11 @@ print("Train LogReg: ", rmse_new(y_train_data_matrix_flat[0:100000], y_hat_train
 ```
 
 
-    Test LogReg:  0.0257101738036102
-    Train LogReg:  0.011819661367076774
-
-
 
 
 ```python
 y_test_data_matrix_flat.shape,y_hat_test.shape
 ```
-
-
-
-
-
-    ((5663018,), (5663018,))
-
 
 
 
