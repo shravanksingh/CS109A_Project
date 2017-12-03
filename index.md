@@ -1,5 +1,5 @@
 ---
-title: EDA
+title: Recommender System Details
 ---
 
 **Restaurant Recommendation System using Yelp dataProject statement:Restaurants is one of the major industry that has close ties with humans’ necessity & offers a variety of experiences and food from specialty cuisines (e.g. Mexican, Italian etc.) to taste, décor & services. Yelp users give rating to the restaurant based on their preferences so one rating for a restaurant that all users see. Yelp has a single star rating which is not enough to address different user preferences. Customized rankings are imperatives to any business and people will benefit more from this service. So, we can build a recommendation system that can identify a user’s preferences and provide customized rankings for each individual user. This recommender system focuses on predicting the rating that a user would have given to a certain restaurant, which is used to rank all the restaurants including those that have not been rated by the user. **
