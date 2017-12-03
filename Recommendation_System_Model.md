@@ -1,5 +1,5 @@
 ---
-title: Performance
+title: Model
 notebook: Recommendation_System_Model.ipynb
 nav_include: 2
 ---
